@@ -1,8 +1,10 @@
 import './css/Home.css';
 import Tree from '../components/Tree';
+import SlideShow from '../components/SlideShow';
 function App() {
   return (
     <>
+      <SlideShow />
       <section className="columns">
         <Tree 
           name="Live Oak"
