@@ -1,0 +1,15 @@
+.house-plan {
+    background-color:cornflowerblue;
+    padding:10px;
+    border-radius: 5px;
+    max-width:30%;
+    margin:1%;
+}
+
+.house-plan img {
+    max-width:100%;
+}
+
+.house-plan .info {
+    padding:10px;
+}
