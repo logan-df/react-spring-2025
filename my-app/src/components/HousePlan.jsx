@@ -27,7 +27,11 @@ const HousePlan = (props) => {
 
   const hideHousePlan = () => {
     setShowHousePlan(false);
-  }
+  };
+
+  const editHousePlan = (house) => {
+    setHousePlan(house);
+  };
 
   return (
     <>
@@ -43,18 +47,19 @@ const HousePlan = (props) => {
             ):("")}
             
             {showEditDialog?(
-               <EditHousePlan
-               _id={housePlan._id}
-               name={housePlan.name}
-               size={housePlan.size}
-               main_image={housePlan.main_image}
-               bedrooms={housePlan.bedrooms}
-               bathrooms={housePlan.bathrooms}
-               features={housePlan.features}
-               closeEditDialog = {closeEditDialog}
-             />
+              <EditHousePlan
+              _id={housePlan._id}
+              name={housePlan.name}
+              size={housePlan.size}
+              main_image={housePlan.main_image}
+              bedrooms={housePlan.bedrooms}
+              bathrooms={housePlan.bathrooms}
+              features={housePlan.features}
+              closeEditDialog = {closeEditDialog}
+              editHousePlan = {editHousePlan}
+              />
             ):("")}
-           
+
 
           <section className="house-plan columns">
             <section className="feature-image">

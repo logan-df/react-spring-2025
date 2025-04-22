@@ -43,4 +43,4 @@ const DeleteHousePlan = (props) => {
   );
 };
 
-export default DeleteHousePlan
+export default DeleteHousePlan;
